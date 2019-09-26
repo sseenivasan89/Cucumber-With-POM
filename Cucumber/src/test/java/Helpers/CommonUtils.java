@@ -17,7 +17,7 @@ public class CommonUtils {
 	public static Properties getValue() {
 		InputStream input = null;
 		try {
-
+System.out.println(System.getProperty("user.dir"));
 			File propFile = new File(System.getProperty("user.dir") + "/src/test/java/Helpers/Resoruce.properties");
 
 			if (!propFile.exists()) {
