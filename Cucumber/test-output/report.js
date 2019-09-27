@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8956637800,
+  "duration": 9273420600,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,32 +48,32 @@ formatter.match({
   "location": "GoogleSearchSteps.i_Launch_Goolge()"
 });
 formatter.result({
-  "duration": 6433465800,
+  "duration": 6310214700,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleSearchSteps.i_Search_For_Selenium()"
 });
 formatter.result({
-  "duration": 7431743800,
+  "duration": 6279310700,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleSearchSteps.i_Select_The_Link()"
 });
 formatter.result({
-  "duration": 1434195900,
+  "duration": 3217079100,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleSearchSteps.i_Search_Something_On_Selenium_Page()"
 });
 formatter.result({
-  "duration": 4519449100,
+  "duration": 6302579800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2175591600,
+  "duration": 2891593800,
   "status": "passed"
 });
 });
