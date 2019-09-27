@@ -6,16 +6,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import StepDefinitions.GoogleSearchSteps;
 import StepDefinitions.Hook;
 import junit.framework.Assert;
 
 public class GoogleSearchPage {
-
+	WebDriverWait wait;
 	public WebDriver driver = Hook.getDriver();
 
 	public GoogleSearchPage() {
 		PageFactory.initElements(driver, this);
+		wait = new WebDriverWait(driver, 30);
 	}
 
 	@FindBy(name = "q")
@@ -41,7 +45,7 @@ public class GoogleSearchPage {
 
 	public void seleniumPageSearch(String seleniumSearchText) {
 		Assert.assertEquals("Selenium - Web Browser Automation", driver.getTitle());
-		System.out.println();
+		wait.until(ExpectedConditions.visibilityOfAllElements(seleniumSearchBox));
 		seleniumSearchBox.sendKeys(seleniumSearchText);
 		seleniumPageSubmitButton.click();
 	}
