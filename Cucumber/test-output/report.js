@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 9374487700,
+  "duration": 11410816000,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,32 +48,102 @@ formatter.match({
   "location": "GoogleSearchSteps.i_Launch_Goolge()"
 });
 formatter.result({
-  "duration": 4766457200,
+  "duration": 5133904700,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleSearchSteps.i_Search_For_Selenium()"
 });
 formatter.result({
-  "duration": 5084808100,
+  "duration": 4822311900,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleSearchSteps.i_Select_The_Link()"
 });
 formatter.result({
-  "duration": 1724525600,
+  "duration": 3680962700,
   "status": "passed"
 });
 formatter.match({
   "location": "GoogleSearchSteps.i_Search_Something_On_Selenium_Page()"
 });
 formatter.result({
-  "duration": 5300627800,
+  "duration": 4460010000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 237614600,
+  "duration": 3446865300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 7468201800,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 10,
+  "name": "Searching Google Page",
+  "description": "",
+  "id": "google-search;searching-google-page",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 9,
+      "name": "@Search"
+    }
+  ]
+});
+formatter.step({
+  "line": 11,
+  "name": "I Launch Goolge",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "I Search For Selenium",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "I Select The Link",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "I Search Something On Selenium Page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "GoogleSearchSteps.i_Launch_Goolge()"
+});
+formatter.result({
+  "duration": 4020463400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "GoogleSearchSteps.i_Search_For_Selenium()"
+});
+formatter.result({
+  "duration": 4457726900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "GoogleSearchSteps.i_Select_The_Link()"
+});
+formatter.result({
+  "duration": 3368187700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "GoogleSearchSteps.i_Search_Something_On_Selenium_Page()"
+});
+formatter.result({
+  "duration": 4732636400,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 193238500,
   "status": "passed"
 });
 });

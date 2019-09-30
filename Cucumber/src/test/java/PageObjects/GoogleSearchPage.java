@@ -15,11 +15,13 @@ import junit.framework.Assert;
 
 public class GoogleSearchPage {
 	WebDriverWait wait;
-	public WebDriver driver = Hook.getDriver();
+
+	public static WebDriver driver;
 
 	public GoogleSearchPage() {
+		this.driver = Hook.getDriver();
 		PageFactory.initElements(driver, this);
-		wait = new WebDriverWait(driver, 30);
+		wait = new WebDriverWait(driver, 60);
 	}
 
 	@FindBy(name = "q")
